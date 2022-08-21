@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #buttons {
+        display: flex;
+        justify-content: space-around;
+        padding: 50px;
+        background-color: thistle;
+      }
+      body {
+        margin: 0;
+      }
+      hr {
+        margin-top: -10px;
+        height: 10px;
+        background-color: goldenrod;
+      }
+      #buttons > button {
+        padding: 15px 40px;
+        background-color: crimson;
+        border: none;
+        border-radius: 10px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+          rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        cursor: pointer;
+      }
+      #section2 {
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="section1">
+      <div id="buttons">
+        <!--Create buttons namely “Scope”, “Hoisting”, ‘Constructor Functions’, ‘Prototype’ in index.html. Each button will have it's respective name as HTML id. For e.g Scope button will HTML id as "scope". ( Note: no capital letter in id )-->
+        <button id="Scope" onclick="showDataOnWindow('scope')">Scope</button>
+        <button id="hoisting" onclick="showDataOnWindow('hoisting')">
+          Hoisting
+        </button>
+        <button
+          id="constructor"
+          onclick="showDataOnWindow('constructorFunctions')"
+        >
+          Constructor Functions
+        </button>
+        <button id="prototype" onclick="showDataOnWindow('prototype')">
+          Prototype
+        </button>
+      </div>
+    </section>
+
+    <hr />
+    <div id="section2"></div>
+  </body>
+</html>
+<script src="./index.js"></script>
